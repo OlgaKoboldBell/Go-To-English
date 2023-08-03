@@ -45,7 +45,7 @@
         <TextBox x:Name="tb3" HorizontalAlignment="Left" Height="35" Margin="130,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="385"  Visibility ="Hidden" />
 
         <Button x:Name="bt18" Content="На головну" HorizontalAlignment="Left" Height="24" Margin="670,10,0,0" VerticalAlignment="Top" Width="92" Click="bt18_Click"  />
-        <Button x:Name="bt19" Content="СЛОВА" HorizontalAlignment="Left" Height="24" Margin="670,40,0,0" VerticalAlignment="Top" Width="92" Click="bt19_Click"   />
+        <Button x:Name="bt19" Content="СЛОВА" HorizontalAlignment="Left" Height="94" Margin="670,40,0,0" VerticalAlignment="Top" Width="92" Click="bt19_Click"   />
 
         <StackPanel x:Name="sp1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility ="Hidden">
             <!-- First Image and TextBlock -->
