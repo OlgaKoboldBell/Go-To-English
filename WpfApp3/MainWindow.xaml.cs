@@ -137,7 +137,7 @@ namespace WpfApp3
         {
             tb2.Text = "";
             tb3.Visibility = Visibility.Visible;
-            tb3.Text = "Потрібно виконати вправи - " +
+            tb3.Text = "Давайте виконаємо вправи - " +
                 "виберіть одну із запропонованих";
         }
 
