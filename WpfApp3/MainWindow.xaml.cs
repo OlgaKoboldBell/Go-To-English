@@ -1,4 +1,5 @@
-﻿using Microsoft.Win32;
+﻿
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -33,6 +34,12 @@ namespace WpfApp3
             pictureBoxes.Add(dogImage);
             pictureBoxes.Add(catImage);
             pictureBoxes.Add(houseImage);
+            pictureBoxes.Add(HistoryImage);
+            pictureBoxes.Add(MathematicsImage);
+            pictureBoxes.Add(PhysicsImage);
+            pictureBoxes.Add(DrinkImage);
+            pictureBoxes.Add(LunchImage);
+            pictureBoxes.Add(SchoolImage);
         }
 
         //вибір теми
@@ -46,7 +53,7 @@ namespace WpfApp3
             bt17.Visibility = tb1.Visibility = tb2.Visibility =
             tb3.Visibility = wb.Visibility = im2.Visibility =
             im3.Visibility = im4.Visibility = im5.Visibility =
-            im6.Visibility = sp1.Visibility = Visibility.Hidden;
+            im6.Visibility = sp1.Visibility = wp1.Visibility = Visibility.Hidden;
         }
 
         //вітання
@@ -102,10 +109,9 @@ namespace WpfApp3
         private void bt5_Click(object sender, RoutedEventArgs e)
         {
             tb1.Text = tb2.Text = "";
-            bt3.Visibility = bt4.Visibility = bt2.Visibility =
+            bt3.Visibility = bt4.Visibility = bt2.Visibility = wb.Visibility =
                 bt6.Visibility = tb2.Visibility = Visibility.Hidden;
-            bt7.Visibility = bt14.Visibility = bt15.Visibility = tb1.Visibility =
-                wb.Visibility = Visibility.Visible;
+            bt7.Visibility = bt14.Visibility = bt15.Visibility = tb1.Visibility = Visibility.Visible;
             Show_info(".\\texts\\store.txt");
             //Show_info("D:\\Users\\Olga\\Desktop\\TeamPr\\магазин.txt");
             im5.Visibility = Visibility.Visible;
@@ -136,8 +142,9 @@ namespace WpfApp3
         private void bt7_Click(object sender, RoutedEventArgs e)
         {
             tb2.Text = "";
+            wp1.Visibility = Visibility.Hidden;
             tb3.Visibility = Visibility.Visible;
-            tb3.Text = "Давайте виконаємо вправи - " +
+            tb3.Text = "Потрібно виконати вправи - " +
                 "виберіть одну із запропонованих";
         }
 
@@ -235,7 +242,7 @@ namespace WpfApp3
             tb2.Visibility = Visibility.Visible;
             wb.Visibility = Visibility.Hidden;
             Show_info2(".\\texts\\weat_Ex_2.txt");
-           // Show_info2("D:\\Users\\Olga\\Desktop\\TeamPr\\Вправа_2_погода.txt");
+            // Show_info2("D:\\Users\\Olga\\Desktop\\TeamPr\\Вправа_2_погода.txt");
         }
 
         //На головну
@@ -247,7 +254,7 @@ namespace WpfApp3
                 bt14.Visibility = bt15.Visibility = bt16.Visibility = bt17.Visibility =
                 wb.Visibility = tb1.Visibility = tb2.Visibility = tb3.Visibility =
                 im2.Visibility = im3.Visibility = im4.Visibility = im5.Visibility =
-                im6.Visibility = sp1.Visibility = Visibility.Hidden;
+                im6.Visibility = sp1.Visibility = wp1.Visibility = Visibility.Hidden;
         }
         async public void Show_info(string patch)
         {
@@ -327,7 +334,7 @@ namespace WpfApp3
                 ToggleVisibility(image, word);
             }
         }
-
+        //
         private void OnWordTapped(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             if (sender is TextBlock textBlock && textBlock.Tag is string word)
@@ -353,6 +360,40 @@ namespace WpfApp3
                 houseImage.Visibility = houseImage.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
                 houseText.Visibility = houseText.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
             }
+            else if (word == "History")
+            {
+                HistoryImage.Visibility = HistoryImage.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+                HistoryText.Visibility = HistoryText.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+            }
+            else if (word == "Physics")
+            {
+                PhysicsImage.Visibility = PhysicsImage.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+                PhysicsText.Visibility = PhysicsText.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+            }
+            else if (word == "Mathematics")
+            {
+                MathematicsImage.Visibility = MathematicsImage.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+                MathematicsText.Visibility = MathematicsText.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+            }
+
+            else if (word == "Drink")
+            {
+                DrinkImage.Visibility = DrinkImage.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+                DrinkText.Visibility = DrinkText.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+            }
+
+            else if (word == "Lunch")
+            {
+                LunchImage.Visibility = LunchImage.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+                LunchText.Visibility = LunchText.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+            }
+            else if (word == "School")
+            {
+                SchoolImage.Visibility = SchoolImage.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+                SchoolText.Visibility = SchoolText.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+            }
+
+
         }
         private void ToggleVisibility(TextBlock textBlock, string word)
         {
@@ -371,7 +412,40 @@ namespace WpfApp3
                 houseImage.Visibility = houseImage.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
                 houseText.Visibility = houseText.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
             }
+            else if (word == "History")
+            {
+                HistoryImage.Visibility = HistoryImage.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+                HistoryText.Visibility = HistoryText.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+            }
+            else if (word == "Physics")
+            {
+                PhysicsImage.Visibility = PhysicsImage.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+                PhysicsText.Visibility = PhysicsText.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+            }
+            else if (word == "Mathematics")
+            {
+                MathematicsImage.Visibility = MathematicsImage.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+                MathematicsText.Visibility = MathematicsText.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+            }
+
+            else if (word == "Drink")
+            {
+
+                DrinkImage.Visibility = DrinkImage.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+                DrinkText.Visibility = DrinkText.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+            }
+            else if (word == "Lunch")
+            {
+                LunchImage.Visibility = LunchImage.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+                LunchText.Visibility = LunchText.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+            }
+            else if (word == "School")
+            {
+                SchoolImage.Visibility = SchoolImage.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+                SchoolText.Visibility = SchoolText.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+            }
         }
+
 
         //слова
         private void bt19_Click(object sender, RoutedEventArgs e)
@@ -386,7 +460,7 @@ namespace WpfApp3
             im3.Visibility = im4.Visibility = im5.Visibility =
             im6.Visibility = sp1.Visibility = Visibility.Hidden;
             tb2.Text = "";
-            tb2.Visibility = sp1.Visibility = Visibility.Visible;
+            wp1.Visibility = sp1.Visibility = Visibility.Visible;
         }
     }
 }
