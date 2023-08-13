@@ -55,6 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Task1.xaml.cs">
+      <DependentUpon>Task1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Task2.xaml.cs">
+      <DependentUpon>Task2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Task3.xaml.cs">
+      <DependentUpon>Task3.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Words.xaml.cs">
       <DependentUpon>Words.xaml</DependentUpon>
     </Compile>
@@ -71,6 +80,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Option.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Task1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Task2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Task3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

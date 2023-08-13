@@ -115,11 +115,16 @@
 
         <Grid>
             <Grid>
-                <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Margin="0,16,0,-416"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="581*"/>
+                    <ColumnDefinition Width="139*"/>
+                </Grid.ColumnDefinitions>
+                <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Margin="0,16,0,-416" Grid.ColumnSpan="2"/>
 
-                <Button Content="About us" FontSize="18" HorizontalAlignment="Left" Click="About_Us_Click" Margin="275,10,0,0" VerticalAlignment="Top" Background="SkyBlue" Height="49" Width="289"/>
-                <Button Content="Картинки"  FontSize="18" Click="Button_Click" HorizontalAlignment="Left" Margin="564,10,0,0" VerticalAlignment="Top" Background="SkyBlue" Height="49" Width="374" RenderTransformOrigin="-1.609,3.228"/>
-                <Button Content="Exit" Click="Exit" HorizontalAlignment="Left" Margin="1213,783,0,0" Background="Red" VerticalAlignment="Top" FontSize="21" Height="59" Width="227"/>
+                <Button Content="About us" FontSize="21" HorizontalAlignment="Left" Click="About_Us_Click" Margin="248,10,0,0" VerticalAlignment="Top" Background="DeepSkyBlue" Height="49" Width="316" Foreground="#FFFFFCFC" FontWeight="Bold"/>
+                <Button Content="Картинки"  FontSize="21" Click="Button_Click" HorizontalAlignment="Left" Margin="564,10,0,0" VerticalAlignment="Top" Background="DeepSkyBlue" Height="49" Width="374" RenderTransformOrigin="-1.609,3.228" Foreground="#FFEFEAEA" FontWeight="Bold"/>
+                <Button Content="Exit" Click="Exit" HorizontalAlignment="Left" Margin="51,783,0,0" Background="#FFAB00FF" VerticalAlignment="Top" FontSize="24" Height="59" Width="227" Grid.Column="1" FontWeight="Bold"/>
+                <Button Content="Task" Click="Task1" HorizontalAlignment="Left" Margin="938,10,0,0" VerticalAlignment="Top" Height="49" Width="274" Background="DeepSkyBlue" Foreground="#FFEFF5F1" FontSize="19" FontWeight="Bold" Grid.ColumnSpan="2"/>
             </Grid>
         </Grid>
 

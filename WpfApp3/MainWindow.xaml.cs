@@ -496,5 +496,16 @@ namespace WpfApp3
         {
             Application.Current.Shutdown();
         }
+
+        private void Task1(object sender, RoutedEventArgs e)
+        {
+
+            MainFrame.Navigate(new Task1());
+
+            if (MainFrame.CanGoBack)
+            {
+                MainFrame.GoBack();
+            }
+        }
     }
 }
