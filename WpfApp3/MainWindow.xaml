@@ -102,5 +102,12 @@
 
             </StackPanel>
         </WrapPanel>
+        <Grid>
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Margin="0,16,0,-416"/>
+
+            <Button Content="Option" FontSize="21" HorizontalAlignment="Left" Click="About_Us_Click" Margin="275,10,0,0" VerticalAlignment="Top" Background="SkyBlue" Height="49" Width="289"/>
+            <!--<Button Content="Картинки"  FontSize="18" Click="Button_Click" HorizontalAlignment="Left" Margin="564,10,0,0" VerticalAlignment="Top" Background="SkyBlue" Height="49" Width="374" RenderTransformOrigin="-1.609,3.228"/>
+            <Button Content="Exit" Click="Exit" HorizontalAlignment="Left" Margin="1213,783,0,0" Background="Red" VerticalAlignment="Top" FontSize="21" Height="59" Width="227"/>-->
+        </Grid>
     </Grid>
 </Window>

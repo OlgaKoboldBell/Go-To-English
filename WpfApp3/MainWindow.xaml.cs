@@ -462,5 +462,15 @@ namespace WpfApp3
             tb2.Text = "";
             wp1.Visibility = sp1.Visibility = Visibility.Visible;
         }
+
+        private void About_Us_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Option());
+
+            if (MainFrame.CanGoBack)
+            {
+                MainFrame.GoBack();
+            }
+        }
     }
 }
