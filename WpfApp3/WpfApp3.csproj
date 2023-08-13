@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Words.xaml.cs">
+      <DependentUpon>Words.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -68,6 +71,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Option.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Words.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -110,7 +117,7 @@
     <Resource Include="images\cat.jpg" />
     <Resource Include="images\dog.jpg" />
     <Resource Include="images\eng.jpg" />
-    <Resource Include="images\hause.jpg" />
+    <Resource Include="images\house.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\Drink.jpg" />

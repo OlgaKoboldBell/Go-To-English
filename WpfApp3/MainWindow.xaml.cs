@@ -1,4 +1,5 @@
 ﻿
+
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,8 @@ namespace WpfApp3
         public MainWindow()
         {
             InitializeComponent();
+
+
             //#if DEBUG
             //            this.AttachDevTools();
             //#endif
@@ -463,6 +466,22 @@ namespace WpfApp3
             wp1.Visibility = sp1.Visibility = Visibility.Visible;
         }
 
+
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            MainFrame.Navigate(new Words());
+            if (MainFrame.CanGoBack)
+            {
+                MainFrame.GoBack();
+            }
+
+
+        }
+
+
+
         private void About_Us_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Navigate(new Option());
@@ -471,6 +490,11 @@ namespace WpfApp3
             {
                 MainFrame.GoBack();
             }
+        }
+
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }
