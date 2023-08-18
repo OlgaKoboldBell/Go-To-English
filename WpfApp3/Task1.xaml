@@ -54,14 +54,8 @@
         <Image Source="/images/en.jpg" Width="120" HorizontalAlignment="Left" Margin="27,23,0,93"/>
 
         <Button Grid.Row="8" Content="Check Translations" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,20" Click="CheckTranslations_Click" FontSize="14" FontWeight="Bold" Background="#FF5CBFD8"/>
-        <Button Content="Task2" Click="Task2_go_ckick" HorizontalAlignment="Left" Margin="416,0,0,0" Grid.Row="8" VerticalAlignment="Center" Width="81" FontWeight="Bold">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black"/>
-                    <GradientStop Color="#FF6AC1DE" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
+       
         <TextBox Margin="27,0,0,142" TextWrapping="Wrap" Text="Task1" VerticalAlignment="Top" Width="120" Height="35" FontSize="22" HorizontalAlignment="Left" FontWeight="Bold"/>
+        <Button Content="Menu" Click="To_Menu" HorizontalAlignment="Left" Margin="27,108,0,0" VerticalAlignment="Top" Height="40" Width="84" FontSize="14" FontWeight="Bold" Background="#FFD6C23C"/>
     </Grid>
 </Page>

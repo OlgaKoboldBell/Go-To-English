@@ -12,6 +12,8 @@ namespace WpfApp3
 
     {
 
+        private MainWindow mainWindow;
+
         private string[] correctTranslations = { "Яблуко", "Машина", "Книга" };
 
         private string[] englishWords = { "Apple", "Car", "Book" };
@@ -31,6 +33,8 @@ namespace WpfApp3
             englishLabel2.Content = "English Word: " + englishWords[1];
 
             englishLabel3.Content = "English Word: " + englishWords[2];
+
+            mainWindow = new MainWindow();
 
         }
 
@@ -106,9 +110,12 @@ namespace WpfApp3
 
         }
 
-        private void Task2_go_ckick(object sender, RoutedEventArgs e)
+      
+
+        private void To_Menu(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Task2());
+            mainWindow.Show();
+            Window.GetWindow(this).Hide();
         }
     }
 

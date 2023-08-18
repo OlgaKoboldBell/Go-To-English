@@ -12,6 +12,7 @@ namespace WpfApp3
 
     public partial class Task2 : Page
     {
+        private MainWindow mainWindow;
         private string[] correctTranslations = { "Сонце", "Дерево" };
         private string[] englishWords = { "Sun", "Tree" };
         private int correctCount = 0;
@@ -23,6 +24,7 @@ namespace WpfApp3
             InitializeComponent();
             englishLabel1.Content = "English Word: " + englishWords[0];
             englishLabel2.Content = "English Word: " + englishWords[1];
+            mainWindow = new MainWindow();
         }
 
 
@@ -77,6 +79,12 @@ private void Task3_Click(object sender, RoutedEventArgs e)
         private void Task1(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Task1());
+        }
+
+        private void To_Menu(object sender, RoutedEventArgs e)
+        {
+            mainWindow.Show();
+            Window.GetWindow(this).Hide();
         }
     }
 

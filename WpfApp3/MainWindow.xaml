@@ -121,13 +121,18 @@
                 </Grid.ColumnDefinitions>
                 <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Margin="0,16,0,-416" Grid.ColumnSpan="2"/>
 
-                <Button Content="About us" FontSize="21" HorizontalAlignment="Left" Click="About_Us_Click" Margin="248,10,0,0" VerticalAlignment="Top" Background="DeepSkyBlue" Height="49" Width="316" Foreground="#FFFFFCFC" FontWeight="Bold"/>
-                <Button Content="Картинки"  FontSize="21" Click="Button_Click" HorizontalAlignment="Left" Margin="564,10,0,0" VerticalAlignment="Top" Background="DeepSkyBlue" Height="49" Width="374" RenderTransformOrigin="-1.609,3.228" Foreground="#FFEFEAEA" FontWeight="Bold"/>
+                <Button Content="About us" FontSize="21" HorizontalAlignment="Left" Click="About_Us_Click" Margin="178,10,0,0" VerticalAlignment="Top" Background="DeepSkyBlue" Height="49" Width="316" Foreground="#FFFFFCFC" FontWeight="Bold"/>
+                <Button Content="Картинки"  FontSize="21" Click="Button_Click" HorizontalAlignment="Left" Margin="499,9,0,0" VerticalAlignment="Top" Background="DeepSkyBlue" Height="49" Width="374" RenderTransformOrigin="-1.609,3.228" Foreground="#FFEFEAEA" FontWeight="Bold"/>
                 <Button Content="Exit" Click="Exit" HorizontalAlignment="Left" Margin="51,783,0,0" Background="#FFAB00FF" VerticalAlignment="Top" FontSize="24" Height="59" Width="227" Grid.Column="1" FontWeight="Bold"/>
-                <Button Content="Task" Click="Task1" HorizontalAlignment="Left" Margin="938,10,0,0" VerticalAlignment="Top" Height="49" Width="274" Background="DeepSkyBlue" Foreground="#FFEFF5F1" FontSize="19" FontWeight="Bold" Grid.ColumnSpan="2"/>
+                <Button Content="Task" Click="Task1" HorizontalAlignment="Left" Margin="898,10,0,0" VerticalAlignment="Top" Height="49" Width="274" Background="DeepSkyBlue" Foreground="#FFEFF5F1" FontSize="19" FontWeight="Bold" Grid.ColumnSpan="2"/>
+
             </Grid>
         </Grid>
-
+        <Grid Margin="25,90,-25,-90">
+            <Button Content="Show Words" Click="ShowWords_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Height="41" Width="115" Background="#FF84E416" FontSize="20" FontWeight="Bold" Margin="42,58,0,0"/>
+            <Button Content="TAsk2"  Click="TAsk_2Ckil" HorizontalAlignment="Left" Margin="42,-14,0,0" VerticalAlignment="Top" Height="30" Width="115" FontSize="24" Background="#FFDA6868"/>
+            <Button Content="TAsk3"  Click="TAsk_3Ckil" HorizontalAlignment="Left" Margin="42,21,0,0" VerticalAlignment="Top" Height="32" Width="115" FontSize="20" FontWeight="Bold" Background="#FFCADC27"/>
+        </Grid>
 
 
     </Grid>

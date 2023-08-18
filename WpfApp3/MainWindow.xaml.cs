@@ -1,10 +1,11 @@
 ﻿
-
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.IO;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -16,6 +17,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp3.Models;
 
 namespace WpfApp3
 {
@@ -501,6 +503,43 @@ namespace WpfApp3
         {
 
             MainFrame.Navigate(new Task1());
+
+            if (MainFrame.CanGoBack)
+            {
+                MainFrame.GoBack();
+            }
+        }
+
+
+
+        private void ShowWords_Click(object sender, RoutedEventArgs e)
+        {
+            var wordData = new WordData
+            {
+                Words = new List<Word>
+               {
+                   new Word { Id = 1, EnglishWord = "Hello" },
+                   new Word { Id = 2, EnglishWord = "World" }
+               }
+            };
+
+            WordsPage wordsPage = new WordsPage(wordData);
+            this.Content = wordsPage; // Замість NavigationService
+        }
+
+        private void TAsk_2Ckil(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Task2());
+
+            if (MainFrame.CanGoBack)
+            {
+                MainFrame.GoBack();
+            }
+        }
+
+        private void TAsk_3Ckil(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Task3());
 
             if (MainFrame.CanGoBack)
             {

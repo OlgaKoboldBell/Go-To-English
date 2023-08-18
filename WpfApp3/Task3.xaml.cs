@@ -14,6 +14,8 @@ namespace WpfApp3
 
     {
 
+        private MainWindow mainWindow;
+
         private string[] correctTranslations = { "Собака", "Будинок" };
         private string[] englishWords = { "Dog", "House" };
         private int correctCount = 0;
@@ -25,6 +27,8 @@ namespace WpfApp3
             InitializeComponent();
             englishLabel1.Content = "English Word: " + englishWords[0];
             englishLabel2.Content = "English Word: " + englishWords[1];
+
+            mainWindow = new MainWindow();
         }
 
 
@@ -70,11 +74,10 @@ namespace WpfApp3
             return "";
         }
 
-
-
-        private void Task2_Click(object sender, RoutedEventArgs e)
+        private void To_Menu(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Task2());
+            mainWindow.Show();
+            Window.GetWindow(this).Hide();
         }
     }
 

@@ -1,0 +1,12 @@
+﻿<Page x:Class="WpfApp3.WordsPage"
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     Title="Words Page">
+    <Grid>
+        <DataGrid Name="dataGrid" AutoGenerateColumns="False" Margin="0,0,-408,-218">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="English Word" Binding="{Binding EnglishWord}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

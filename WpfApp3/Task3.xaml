@@ -63,7 +63,8 @@
             <Button Content="Check Translations" Margin="0,20" Click="CheckTranslations_Click" FontSize="14" FontWeight="Bold" Background="#FFDC5E5E" Foreground="#FFFBF3F3" Width="156"/>
 
         </StackPanel>
-        <Button Content="Task2"  Click="Task2_Click" HorizontalAlignment="Left" Margin="200,413,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FF51ABA1" FontStyle="Italic" FontWeight="Bold" Width="66"/>
+
+        <Button Content="Menu" Click="To_Menu" HorizontalAlignment="Left" Margin="27,108,0,0" VerticalAlignment="Top" Height="40" Width="84" FontSize="14" FontWeight="Bold" Background="#FFD6C23C"/>
 
     </Grid>
 
